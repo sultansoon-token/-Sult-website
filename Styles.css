@@ -1,0 +1,110 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  background: #f4f4f4;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+h1, h2, h3 {
+  color: #0a3d62;
+}
+a {
+  color: #3867d6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+section {
+  margin-bottom: 2rem;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+button {
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px 20px;
+  background: #3867d6;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+button:hover, button:focus {
+  background: #2e54b0;
+  outline: none;
+}
+input[type="text"] {
+  padding: 8px;
+  width: 70%;
+  max-width: 400px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+body.dark a {
+  color: #74b9ff;
+}
+body.dark table, body.dark th, body.dark td {
+  border-color: #555;
+}
+body.dark button {
+  background: #0984e3;
+}
+body.dark button:hover, body.dark button:focus {
+  background: #74b9ff;
+}
+
+/* Language toggle */
+.lang {
+  display: none;
+}
+.lang.active {
+  display: block;
+}
+
+/* Shoutbox */
+#shoutbox, #shoutbox-en {
+  max-width: 600px;
+  background: #e9ecef;
+  padding: 15px;
+  border-radius: 8px;
+}
+body.dark #shoutbox, body.dark #shoutbox-en {
+  background: #333;
+}
+#shoutbox-messages, #shoutbox-messages-en {
+  max-height: 150px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #222;
+}
+body.dark #shoutbox-messages, body.dark #shoutbox-messages-en {
+  background: #222;
+  color: #eee;
+  border-color: #555;
+}
